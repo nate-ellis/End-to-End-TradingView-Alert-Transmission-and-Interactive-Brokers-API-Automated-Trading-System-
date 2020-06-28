@@ -11,7 +11,7 @@ Recognition: In developing this, I came across several sources (Obviously StackO
 Please visit github.com/robswc/tradingview-webhook-bot for more details on how to the Python Flask and NGROK setup are done. 
 
 
-#Assumptions
+# Assumptions
 
 In development of this system, there are several requirements that must be met in order to begin automated trading using this script. 
 
@@ -34,13 +34,13 @@ them and send orders.
 
 
 
-#The effective flow from alert to order sent to IB is as follows:
+# The effective flow from alert to order sent to IB is as follows:
 
 TradingView alert (synced for webhook to NGROK tunnel) --> NGROK io tunnel --> Python Flask on port 5000 --> IB account for order delivery
 
 
 
-#Alerts
+# Alerts
 
 Having the alerts from TradingView setup properly is approximately 50% of the battle. The "repianting" effect can cause severe issues
 with model accuracy, therefore, I utilize a multi-factor system to ensure that an ACTUAL order is complete on-time. This consists of 
@@ -52,7 +52,7 @@ positions to be missed but it will accurately get you in and out of whatever pos
 
 
 
-#TradingView Alert Format
+# TradingView Alert Format
 
 The alert system from TradingView that I use consists of 4 items:
 
@@ -83,14 +83,14 @@ alertcondition(true, title='Webhook Test')
 
 
 
-#Logic Programming
+# Logic Programming
 
 Once the alert is recieved by the Python Flask on port 5000, there needs to be logic to determine the correct course of action. I have 
 untilized logic gates that derive the information sent from the TradingView.com alert to determine whether the order is a buy, sell, 
 or closing a position for either. Again, this is MY system and you may develop a better system to determine order composition.
 
 
-#Testing 
+# Testing 
 
 In order to test, I built out a test script that sent out posts to the NGROK webhook then made a new Python Flask script that had no
 logic gates and activated and sent orders once a post request was recieved. I then monitored my IB account (IN PAPER TRADING) to ensure

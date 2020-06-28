@@ -7,7 +7,7 @@ I have purposely left code snipits out of this script to ensure that persons tha
 AND UNDERSTAND THEIR RISKS. Automated trading is a risk that YOU fully accept should market changes affect you adversely. 
 
 
-Recognition: In developing this, I came across several sources (Obviously StackOverflow is one) but one source was crucial in the success of this development: @robswc
+Recognition: In developing this, I came across several sources (Obviously StackOverflow is one) but one source was crucial in the success of this development: @robswc.
 Please visit github.com/robswc/tradingview-webhook-bot for more details on how to the Python Flask and NGROK setup are done. 
 
 

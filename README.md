@@ -24,7 +24,7 @@ TradingView.com has several examples and prebuilt algos available for learning.
 
 4. Have an NGROK account and install the ngrok package in your Python environment (KNOW HOW TO USE NGROK)
 
-5. Downloaded and installed the IP API (ibapi) package in your Python environment. This will require GitBash or linking the Python environment to your 
+5. Downloaded and installed the IB API (ibapi) package in your Python environment. This will require GitBash or linking the Python environment to your 
 command prompt (Windows). 
 
 6. Proper configuration of the Global Variables in you IB account to allow internal connections from 127.0.0.1.

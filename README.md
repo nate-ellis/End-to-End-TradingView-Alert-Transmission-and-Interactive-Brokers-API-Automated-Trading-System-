@@ -15,7 +15,7 @@ Please visit github.com/robswc/tradingview-webhook-bot for more details on how t
 
 In development of this system, there are several requirements that must be met in order to begin automated trading using this script. 
 
-1. Have a DEVELOPED and "ACCURATE" trading algorithm on TradingView.com. I will not be sharing my algos nor will this cover the development of them for yourself.
+1. Have a DEVELOPED an "ACCURATE" trading algorithm on TradingView.com. I will not be sharing my algos nor will this cover the development of them for yourself.
 TradingView.com has several examples and prebuilt algos available for learning. 
 
 2. Have a TradingView.com account, preferraly Premium in order to send alerts through a webhook

@@ -54,24 +54,14 @@ positions to be missed but it will accurately get you in and out of whatever pos
 
 # TradingView Alert Format
 
-The alert system from TradingView that I use consists of 4 items:
+The alert system from TradingView that I use consists of 2 items:
 
 1. An initiator alert (this instantiates the global logic variables)
-2. Buy order 
-3. Sell order
-4. Close position (for either)
+2. An alert order delivered by the model alert setting (See TradingView alerts on robswc's GitHub for more).
 
-This method has been tested in the harshest conditions (over 100 trades a day) and has proven 100% accurate on paper trading in getting
-you into a position and closing that position properly. The initator alert should be run first followed by the other alerts being setup
-and listening on the manual indicator alert that you develop AND the model alert. The language in the alerts are (in sequence):
+The alert format inside of the model alert should be this EXACTLY:
 
-Initiation: {'type':'initiator', 'alert':'non-alert', 'price':'{{close}}', 'ticker':'XX'}
-
-Buy: {'price':{{close}}, 'ticker':'XX', 'type':'buy', 'alert':'non-alert'}
-
-Sell: {'price':{{close}}, 'ticker':'XX', 'type':'sell', 'alert':'non-alert'}
-
-Model Alert: {'type':'out', 'alert':'alert', 'ticker':'XX', 'price':{{close}}}
+${"ticker":"XX", "price":{{close}}}@{{strategy.order.comment}} {{strategy.order.action}}! {{strategy.order.contracts}}
 
 
 Note: For the initiator, use this for the Pine Script to setup the alert. 
